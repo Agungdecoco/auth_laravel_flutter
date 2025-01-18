@@ -2,7 +2,8 @@ import 'package:dio/dio.dart';
 
 class ApiService {
   static final Dio _dio = Dio(BaseOptions(
-    baseUrl: "http://192.168.37.108:8001/api", // Ganti dengan URL backend Laravel Anda
+    // Ganti baseUrl dengan url anda
+    baseUrl: "http://192.168.37.108:8001/api",
     connectTimeout: const Duration(hours: 5000),
     receiveTimeout: const Duration(hours: 3000),
     headers: {"Content-Type": "application/json"},
