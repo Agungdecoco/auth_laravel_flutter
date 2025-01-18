@@ -39,7 +39,7 @@ A full-stack application built with Laravel (backend) and Flutter (frontend).
 
 6. **Start the server**:
    ```bash
-   php artisan serve
+   php artisan serve --host 0.0.0.0 --port 8000
    ```
 
 ### Frontend (Flutter)
@@ -54,7 +54,12 @@ A full-stack application built with Laravel (backend) and Flutter (frontend).
    flutter pub get
    ```
 
-3. **Run the application**:
+3. **Set base url**
+   ```bash
+   change baseUrl with your url in auth_fe/lib/core/services/api_service.dart
+   ```
+   
+4. **Run the application**:
    ```bash
    flutter run
    ```
